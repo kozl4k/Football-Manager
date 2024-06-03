@@ -6,6 +6,7 @@ $players = $pdo->query("SELECT * FROM players")->fetchAll();
 $finances = $pdo->query("SELECT * FROM finances ORDER BY id DESC LIMIT 1")->fetch();
 $sponsors = $pdo->query("SELECT * FROM sponsors")->fetchAll();
 $matches = $pdo->query("SELECT * FROM matches")->fetchAll();
+$trainings = $pdo->query("SELECT * FROM trainings")->fetchAll();
 
 ?>
 
@@ -103,6 +104,29 @@ $matches = $pdo->query("SELECT * FROM matches")->fetchAll();
             </tr>
             <?php endforeach; ?>
     </table>
+
+    <h2>Treningi</h2>
+    <table border="1">
+            <tr>
+                
+                <th>Nazwa treningu</th>
+                <th>Ćwiczenia</th>
+                <th>Intensywność treningu</th>
+                <th>Data</th>
+    
+            </tr>
+            <?php foreach ($trainings as $training): ?>
+            <tr>
+                
+                <td><?= $training['name'] ?></td>
+                <td><?= $training['exercises'] ?></td>
+                <td><?= $training['intensity'] ?></td>
+                <td><?= $training['schedule'] ?></td>
+                
+            </tr>
+            <?php endforeach; ?>
+    </table>
+
 
     <h2>Podsumowanie Finansów</h2>
 
