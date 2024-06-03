@@ -1,0 +1,61 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin: auto;   
+    height: auto;
+}
+
+.przycisk{
+    margin: 2px;
+}
+
+button{
+    width: 150px;
+    height: 40px;
+    background-color: rgb(1, 1, 181)
+}
+button:hover {
+    background-color: rgb(36, 0, 121);
+    width: 155px;
+    height: 50px;
+}
+
+#con{
+    height: 100%;
+    width: 100%;
+    min-height: 1100px;
+    margin: auto;
+    background-color: lightblue;
+}
+
+#listaAkcji{
+    width: 160px;
+    height: 1100px;
+    text-align: center;
+    border-right: solid 5px #281970;
+    background-color:rgb(59, 133, 129);
+    float: left;
+}
+
+
+#embedded-site{
+    border: 5px solid #150080;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    padding: 1%;
+    background-color: rgb(108, 28, 255);
+    right: 1%;
+    top: 1%;
+    -webkit-box-shadow: 13px 8px 24px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 13px 8px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 13px 8px 24px 0px rgba(66, 68, 90, 1);
+    border-radius: 20px 20px 20px 20px;
+}
+
+#prawy{
+    width: 50%;
+    min-height: 1100px;
+    float: left;
+    margin-left: 1%;
+}
+
