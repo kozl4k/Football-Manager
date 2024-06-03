@@ -22,14 +22,14 @@ button:hover {
 #con{
     height: 100%;
     width: 100%;
-    min-height: 1100px;
+    min-height: 2000px;
     margin: auto;
     background-color: lightblue;
 }
 
 #listaAkcji{
     width: 160px;
-    height: 1100px;
+    height: 2000px;
     text-align: center;
     border-right: solid 5px #281970;
     background-color:rgb(59, 133, 129);
@@ -54,7 +54,7 @@ button:hover {
 
 #prawy{
     width: 50%;
-    min-height: 1100px;
+    min-height: 2000px;
     float: left;
     margin-left: 1%;
 }
