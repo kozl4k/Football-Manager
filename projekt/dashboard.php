@@ -72,7 +72,7 @@ $trainings = $pdo->query("SELECT * FROM trainings")->fetchAll();
                     <form method="POST" action="update_sponsor.php" style="display:inline;">
                     <input type="hidden" name="id" value="<?= $sponsor['id'] ?>">
                     <input type="submit" value="Update">
-
+                    </form>
                     <form method="POST" action="delete_sponsor.php" style="display:inline;">
                     <input type="hidden" name="id" value="<?= $sponsor['id'] ?>">
                     <input type="submit" value="Delete" onclick="return confirm('Are you sure you want to delete this sponsor?');">
